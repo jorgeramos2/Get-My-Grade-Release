@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SoV-h2-pQW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SoV-h2-pQW">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c4E-Uv-MA0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="GeT-ZB-JrF">
                             <rect key="frame" x="0.0" y="141" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,7 +52,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="Zf0-JV-VjM" customClass="UITableViewCellMateria" customModule="GetMyGrade" customModuleProvider="target">
@@ -175,7 +177,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="enk-4H-rG8" customClass="TableViewCellCategoria" customModule="GetMyGrade" customModuleProvider="target">
@@ -278,7 +280,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="9fs-tW-Ryp" customClass="TableViewCellActividad" customModule="GetMyGrade" customModuleProvider="target">
@@ -361,7 +363,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQh-3k-abv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHd-nj-XxW">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHd-nj-XxW">
                                         <rect key="frame" x="157" y="289" width="46" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -384,7 +386,7 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS1-GD-lOu" customClass="ProgressBar" customModule="GetMyGrade" customModuleProvider="target">
                                         <rect key="frame" x="67" y="33" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                 <color key="value" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -403,7 +405,8 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="bt4-Lh-fOH"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8AH-uL-8oo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SQh-3k-abv" firstAttribute="leading" secondItem="8AH-uL-8oo" secondAttribute="leading" id="NQT-BO-Jyy"/>
@@ -411,7 +414,6 @@
                             <constraint firstItem="SQh-3k-abv" firstAttribute="top" secondItem="C16-jT-sgf" secondAttribute="top" id="gTA-CX-xkz"/>
                             <constraint firstItem="SQh-3k-abv" firstAttribute="bottom" secondItem="8AH-uL-8oo" secondAttribute="bottom" id="qmc-Px-Zl7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8AH-uL-8oo"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tpt-jZ-kU5" appends="YES" id="YvE-SS-ITh"/>
                         </connections>
@@ -438,7 +440,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-gk-Kpp">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-gk-Kpp">
                                 <rect key="frame" x="164" y="473" width="46" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -450,18 +452,14 @@
                                     <action selector="dismissSecondVC:" destination="Bw9-Hn-lUa" eventType="touchUpInside" id="CLT-5a-e57"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Drl-FS-tof">
-                                <rect key="frame" x="44" y="57" width="295" height="186"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-jz-WMz">
-                                <rect key="frame" x="65" y="261" width="240" height="135"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-jz-WMz">
+                                <rect key="frame" x="39" y="121" width="298" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="29"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -469,13 +467,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="iiF-RX-qCI"/>
+                        <color key="backgroundColor" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="lx2-BG-CW7"/>
                     <connections>
                         <outlet property="dismissButton" destination="TY3-gk-Kpp" id="n3h-RX-jWu"/>
-                        <outlet property="imagen" destination="Drl-FS-tof" id="34Y-Es-6iS"/>
                         <outlet property="label1" destination="rjf-jz-WMz" id="Opb-Pz-ZXZ"/>
                     </connections>
                 </viewController>
@@ -530,6 +527,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="qsa-Sk-wGn"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6CR-Sb-aBa"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -538,7 +536,6 @@
                             <constraint firstAttribute="trailing" secondItem="JFU-VG-R37" secondAttribute="trailing" id="aAV-VN-Eqq"/>
                             <constraint firstItem="JFU-VG-R37" firstAttribute="top" secondItem="WLW-KV-tix" secondAttribute="top" id="nrE-A0-uQu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6CR-Sb-aBa"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5qO-Ju-piY" appends="YES" id="T1h-xa-8MT"/>
                         </connections>
@@ -605,6 +602,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="iXI-VH-MZf"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kwt-4f-kGn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -613,7 +611,6 @@
                             <constraint firstItem="HYp-8H-MMT" firstAttribute="trailing" secondItem="Kwt-4f-kGn" secondAttribute="trailing" id="YIE-nc-Hhq"/>
                             <constraint firstItem="HYp-8H-MMT" firstAttribute="leading" secondItem="Kwt-4f-kGn" secondAttribute="leading" id="kOz-Hn-RXk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kwt-4f-kGn"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="zsH-pt-NdW" appends="YES" id="Ghg-Zg-Hjp"/>
                         </connections>
@@ -698,6 +695,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="ACH-aq-FHJ"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="urd-LG-g7A"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -706,7 +704,6 @@
                             <constraint firstItem="sxA-su-9tt" firstAttribute="trailing" secondItem="urd-LG-g7A" secondAttribute="trailing" id="ipj-VV-64n"/>
                             <constraint firstItem="sxA-su-9tt" firstAttribute="top" secondItem="h67-Oo-BrG" secondAttribute="top" id="rM0-km-Gs8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="urd-LG-g7A"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="z3Q-27-6Sk" appends="YES" id="SkV-6U-N0C"/>
                         </connections>
@@ -786,9 +783,9 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="fT8-3O-7hu"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="fT8-3O-7hu"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EFF-gs-5dk" appends="YES" id="N9K-W0-V7F"/>
                         </connections>
@@ -806,10 +803,60 @@
             <point key="canvasLocation" x="2420" y="-396.25187406296857"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0q3-vg-Evf">
+            <size key="intrinsicContentSize" width="132.5" height="34"/>
+        </designable>
+        <designable name="4Ng-Wu-GFE">
+            <size key="intrinsicContentSize" width="49" height="34"/>
+        </designable>
+        <designable name="GFb-Qj-RlV">
+            <size key="intrinsicContentSize" width="78" height="34"/>
+        </designable>
+        <designable name="SnE-N5-yXm">
+            <size key="intrinsicContentSize" width="52" height="34"/>
+        </designable>
+        <designable name="Zwx-3d-aj5">
+            <size key="intrinsicContentSize" width="82" height="34"/>
+        </designable>
+        <designable name="c33-c9-KTm">
+            <size key="intrinsicContentSize" width="173" height="22"/>
+        </designable>
+        <designable name="cMK-LT-dqQ">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="ctX-ph-BUC">
+            <size key="intrinsicContentSize" width="84" height="34"/>
+        </designable>
+        <designable name="gSq-PA-4Uz">
+            <size key="intrinsicContentSize" width="52" height="34"/>
+        </designable>
+        <designable name="hoS-1e-qpJ">
+            <size key="intrinsicContentSize" width="136" height="22"/>
+        </designable>
+        <designable name="on1-j0-Wz6">
+            <size key="intrinsicContentSize" width="52" height="34"/>
+        </designable>
+        <designable name="wWh-Wm-DVf">
+            <size key="intrinsicContentSize" width="157" height="22"/>
+        </designable>
+        <designable name="xG2-Cx-vNH">
+            <size key="intrinsicContentSize" width="52.5" height="34"/>
+        </designable>
+        <designable name="zDX-Qh-bDu">
+            <size key="intrinsicContentSize" width="56.5" height="22"/>
+        </designable>
+    </designables>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

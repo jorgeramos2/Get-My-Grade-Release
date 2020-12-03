@@ -19,13 +19,13 @@ class ViewControllerResultadosAnalisis: UIViewController {
         super.viewDidLoad()
          dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2
          label1.text = mostrar
-        elegirImagen()
+        //elegirImagen()
     }
     
     @IBAction func dismissSecondVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    func elegirImagen()
+    /*func elegirImagen()
     {
         if(numFoto==1)
         {
@@ -40,7 +40,7 @@ class ViewControllerResultadosAnalisis: UIViewController {
             imagen.image = UIImage(named: "tdoggo.png")
         }
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
