@@ -161,17 +161,18 @@ class TableViewControllerCategoria: UITableViewController, protocoloAgregaCatego
             j = 0
             suma = 0
             cont = 0
+            verificaion = true
            	 while (listaActividades.count > j) {
                 
                     if (listaCategorias[i].id == listaActividades[j].idCategoria && listaCategorias[i].diffPond == false){
                         suma += listaActividades[j].calificacion
                         cont += 1
                    }
-                    else if (listaCategorias[i].id == listaActividades[j].idCategoria && listaCategorias[i].diffPond == true)
+                    /*else if (listaCategorias[i].id == listaActividades[j].idCategoria && listaCategorias[i].diffPond == true)
                     {
                         suma += (listaActividades[j].calificacion * listaActividades[j].ponderacion / 100)
                         verificaion = false
-                    }
+                    }*/
                 
                 j += 1
             }
@@ -179,8 +180,9 @@ class TableViewControllerCategoria: UITableViewController, protocoloAgregaCatego
             if cont != 0 && verificaion == true{
                 suma = suma / cont
             }
+            
             listaCategorias[i].calificacion = suma
-           
+           print(suma ,"hhhhhh")
             
             i += 1
         }
@@ -214,6 +216,7 @@ class TableViewControllerCategoria: UITableViewController, protocoloAgregaCatego
         {
             cell.lbCalif?.text = String((listaCategoriasMostrar[indexPath.row].calificacion*listaCategoriasMostrar[indexPath.row].ponderacion)/100) + " / " + String(listaCategoriasMostrar[indexPath.row].ponderacion)
         }
+        
         
         cell.btEditar.tag = listaCategoriasMostrar[indexPath.row].id
 
