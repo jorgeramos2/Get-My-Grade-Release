@@ -168,11 +168,11 @@ class TableViewControllerCategoria: UITableViewController, protocoloAgregaCatego
                         suma += listaActividades[j].calificacion
                         cont += 1
                    }
-                    /*else if (listaCategorias[i].id == listaActividades[j].idCategoria && listaCategorias[i].diffPond == true)
+                    else if (listaCategorias[i].id == listaActividades[j].idCategoria && listaCategorias[i].diffPond == true)
                     {
                         suma += (listaActividades[j].calificacion * listaActividades[j].ponderacion / 100)
                         verificaion = false
-                    }*/
+                    }
                 
                 j += 1
             }
