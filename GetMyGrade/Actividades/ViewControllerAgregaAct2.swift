@@ -26,7 +26,14 @@ class ViewControllerAgregaAct2: UIViewController,UITextFieldDelegate {
         self.addDoneButtonOnKeyboard()
         self.addDoneButtonOnKeyboard2()
         tfNombre.becomeFirstResponder()
-        // Do any additional setup after loading the view.
+        
+        // cambiar color de los placeholder text
+        tfNombre.attributedPlaceholder = NSAttributedString(string: "Homework 1",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        tfCalificacion.attributedPlaceholder = NSAttributedString(string: "85",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        tfPonderacion.attributedPlaceholder = NSAttributedString(string: "25",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])        // Do any additional setup after loading the view.
     }
     // MARK: - Guardar datos escritos
     @objc func analisis()->Void
@@ -38,11 +45,11 @@ class ViewControllerAgregaAct2: UIViewController,UITextFieldDelegate {
         {
             if(cal!>100)
             {
-            let alertController = UIAlertController(title: "Alerta", message: "Se esta agregando una calificacion arriba de 100", preferredStyle: .alert)
-                       let cancelar = UIAlertAction(title: "Modificar", style: .default) { (action) in
+            let alertController = UIAlertController(title: "Alerta", message: "You are adding a grade over 100", preferredStyle: .alert)
+                       let cancelar = UIAlertAction(title: "Revert", style: .default) { (action) in
                                    
                        }
-                           let aceptar = UIAlertAction(title: "Aceptar", style: .default){
+                           let aceptar = UIAlertAction(title: "Accept", style: .default){
                                (action) in
                                let number = Int.random(in: 0 ... 10000)
                                let unAct = Actividad(nombre:nom!, calificacion: cal!, id: number, idCategoria: self.idCategoria, ponderacion: 0)

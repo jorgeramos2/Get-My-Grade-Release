@@ -33,8 +33,11 @@ class ViewControllerAgregaCategoria: UIViewController,UITextFieldDelegate {
         self.addDoneButtonOnKeyboard()
         self.tfNombre.becomeFirstResponder()
         diff.addTarget(self, action: #selector(ViewControllerAgregaMateria.switchIsChanged(mySwitch:)), for: UIControl.Event.valueChanged)
-        
-        
+        // cambiar color de los placeholder text
+        tfNombre.attributedPlaceholder = NSAttributedString(string: "Homeworks",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        tfPorcentaje.attributedPlaceholder = NSAttributedString(string: "20",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         do {
             let data = try Data.init(contentsOf: dataFileUrl())
             listaCategorias = try PropertyListDecoder().decode([Categoria].self, from: data)

@@ -33,9 +33,13 @@ class ViewControllerAgregaMateria: UIViewController,UITextFieldDelegate{
         mySwitch.addTarget(self, action: #selector(ViewControllerAgregaMateria.switchIsChanged(mySwitch:)), for: UIControl.Event.valueChanged)
         self.tfNombre.becomeFirstResponder()
         
-   
-        
         tfTotal.isHidden = true
+        
+        // cambiar color de los placeholder text
+        tfNombre.attributedPlaceholder = NSAttributedString(string: "Math",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        tfTotal.attributedPlaceholder = NSAttributedString(string: "105",
+                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
     // Do any additional setup after loading the view.
     }
      // MARK: - Guardar datos escritos
